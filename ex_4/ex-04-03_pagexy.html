@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
+        <style>
+            #aaa 
+            {
+           position:fixed;
+                font-size: 45px;
+            left: 800px;
+            top: 400px;
+            }
+        </style>
         <title>Event object</title>
     </head>
     <body>
-        <p id="position"></p>
+        <p id="aaa"></p>
         <script>
-            var page_coord = document.getElementById("position");
+            var page_coord = document.getElementById("aaa");
             document.addEventListener("mousemove", function(e) {
-                page_coord.innerHTML = e.pageX + " " + e.pageY;
+                page_coord.innerHTML = "X:"+ e.pageX + " " + "Y:"+ e.pageY;
             });
         </script>
     </body>

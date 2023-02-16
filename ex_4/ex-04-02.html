@@ -6,8 +6,8 @@
     <body>
         <h2>Earth Poles Viewer</h2>
         <img id="myImage" src="images/north.svg"><br>
-        <input type="button" value="Hover to change" id="north">
-        
+        <input type="button" value="North Pole" id="north">
+        <input type="button" value="South Pole" id="south">
         <script>
             function showNorth() {
                 document
@@ -19,13 +19,14 @@
                     .getElementById("myImage")
                     .src = "images/south.svg";
             }
+            
             document
                 .getElementById("north")
-                .addEventListener("mouseout", showNorth);
+                .addEventListener("mouseover", showNorth);
             
-              document
-                .getElementById("north")
-                .addEventListener("mouseover", showSouth);
+            document
+                .getElementById("south")
+                .addEventListener("mouseout", showSouth);
         </script>
     </body>
 </html>

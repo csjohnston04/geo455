@@ -24,16 +24,18 @@
     <button id="myBtn3">Try it!!</button>
     <p id="demo3"></p>
 
-
-
+    <h4>Add</h4>
+<button id="myBtn4">Add</button>
+    <p id="demo4"></p>
 <script>
-    
+   var n=0;
     document.getElementById("myBtn1").addEventListener("click", hello);
     
     function hello() {
         document.getElementById("demo1").innerHTML = 
             "JavaScript can change page contents!";
             }
+
 
     
     
@@ -61,7 +63,13 @@
     function myThirdFunction() {
         document.getElementById("demo3").innerHTML += "Moused out!<br>";
     }
+    document.getElementById("myBtn4").addEventListener("click", add);
     
+    function add() {
+        document.getElementById("demo4").innerHTML = 
+            n=n+1;
+            console.log(n);
+            }
     
 </script>
 
