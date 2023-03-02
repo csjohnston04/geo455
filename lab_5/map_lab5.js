@@ -172,7 +172,7 @@ function onMapclick(e){
     .setContent(
     "You clicked the map at -<br>"+"<b>long:</b>" +e.latlng.lng+"<b>lat:</b>" +e.latlng.lat).openOn(mymap);}
 
-myMap.addEventListener("click",onMapclick)
+mymap.addEventListener("click",onMapclick)
 // Add Navigation Buttons
 L.easyButton(('1 height=50%'), function(btn, map){
     map.setView(coords[0], 15);
