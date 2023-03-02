@@ -35,52 +35,52 @@ var grayscale = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}
 
 var myIcon1 = L.icon({
     
-    iconurl: 'images/icon1.png',
-    iconsize:[30,30],
+    iconUrl: 'images/icon1.png',
+    iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
 
 var myIcon2 = L.icon({
     
-    iconurl: 'images/icon2.png',
-    iconsize:[30,30],
+    iconUrl: 'images/icon2.png',
+    iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
 
 var myIcon3 = L.icon({
     
-    iconurl: 'images/icon3.png',
-    iconsize:[30,30],
+    iconUrl: 'images/icon3.png',
+    iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
 var myIcon4 = L.icon({
     
-    iconurl: 'images/icon4.png',
-    iconsize:[30,30],
+    iconUrl: 'images/icon4.png',
+    iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
 var myIcon5 = L.icon({
     
-    iconurl: 'images/icon5.png',
-    iconsize:[30,30],
+    iconUrl: 'images/icon5.png',
+    iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
 var myIcon6 = L.icon({
     
-    iconurl: 'images/icon6.png',
-    iconsize:[30,30],
+    iconUrl: 'images/icon6.png',
+    iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
 var myIcon7 = L.icon({
     
-    iconurl: 'images/icon7.png',
-    iconsize:[30,30],
+    iconUrl: 'images/icon7.png',
+    iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
@@ -175,7 +175,7 @@ var miniMap= new L.Control.MiniMap(L.tileLayer('https://api.maptiler.com/maps/to
 var popup = L.popup();
 function onMapclick(e){
     popup
-    .setLatlng(e.latlng)
+    .setLatLng(e.latlng)
     .setContent(
     "You clicked the map at -<br>"+"<b>long:</b>" +e.latlng.lng+"<b>lat:</b>" +e.latlng.lat).openOn(mymap);}
 
