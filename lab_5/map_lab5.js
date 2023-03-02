@@ -2,7 +2,7 @@
 
 var mymap = L.map("map", {
     center: [6.794952075439587, 20.91148703911037], 
-    zoom: 3,
+    zoom: 3
  
 });
 
@@ -154,8 +154,7 @@ line.addTo(mymap);
 var baseLayers = {
     'Grayscale': grayscale,
     'Streets': streets,
-    
-    };
+     };
 
 var overlays = {
     '7 Wonders of the World':loc,
