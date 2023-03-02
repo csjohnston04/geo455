@@ -3,7 +3,7 @@
 var mymap = L.map("map", {
     center: [6.794952075439587, 20.91148703911037], 
     zoom: 3,
-    layers: grayscale
+ 
 });
 
 
@@ -116,18 +116,22 @@ var loc = L.layerGroup();
 
 L.marker(coords[0],{icon: myIcon1}).bindPopup(greatwallPopup, customOptions).addTo(loc);
 
-L.marker(coords[1],{icon: myIcon2}).bindPopup(ChichenItzaPopup, customOptions).addTo(loc);
+L.marker(coords[1],{icon: myIcon2}).bindPopup(ColosseumPopup, customOptions).addTo(loc);
 
 L.marker(coords[2],{icon: myIcon3}).bindPopup(PetraPopup, customOptions).addTo(loc);
 
-L.marker(coords[3],{icon: myIcon4}).bindPopup(MachuPichuPopup, customOptions).addTo(loc);
 
-L.marker(coords[4],{icon: myIcon5}).bindPopup(ChristtheRedeemerPopup, customOptions).addTo(loc);
 
-L.marker(coords[5],{icon: myIcon6}).bindPopup(ColosseumPopup, customOptions).addTo(loc);
+L.marker(coords[3],{icon: myIcon4}).bindPopup(ChichenItzaPopup, customOptions).addTo(loc);
+
+L.marker(coords[4],{icon: myIcon5}).bindPopup(MachuPichuPopup, customOptions).addTo(loc);
+
+L.marker(coords[5],{icon: myIcon6}).bindPopup(ChristtheRedeemerPopup, customOptions).addTo(loc);
+
+
 
 L.marker(coords[6],{icon: myIcon7}).bindPopup(TajMahalPopup, customOptions).addTo(loc);
-
+loc.addTo(mymap);
 
 
 //add lines
@@ -205,6 +209,7 @@ L.easyButton(('<img src="images/globe_icon.png", height=85%>'), function(btn, ma
     iconAnchor: [25, 16]
   });
   var marker = L.marker([0, 0], {icon: issIcon}).addTo(mymap);
+
 
 // Call the ISS real time data URL
   var api_url = 'https://api.wheretheiss.at/v1/satellites/25544';
