@@ -35,7 +35,7 @@ var grayscale = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}
 
 var myIcon1 = L.icon({
     
-    iconUrl: 'images/icon1.png',
+    iconUrl: 'images/icon_1.png',
     iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
@@ -43,7 +43,7 @@ var myIcon1 = L.icon({
 
 var myIcon2 = L.icon({
     
-    iconUrl: 'images/icon2.png',
+    iconUrl: 'images/icon_2.png',
     iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
@@ -51,35 +51,35 @@ var myIcon2 = L.icon({
 
 var myIcon3 = L.icon({
     
-    iconUrl: 'images/icon3.png',
+    iconUrl: 'images/icon_3.png',
     iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
 var myIcon4 = L.icon({
     
-    iconUrl: 'images/icon4.png',
+    iconUrl: 'images/icon_4.png',
     iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
 var myIcon5 = L.icon({
     
-    iconUrl: 'images/icon5.png',
+    iconUrl: 'images/icon_5.png',
     iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
 var myIcon6 = L.icon({
     
-    iconUrl: 'images/icon6.png',
+    iconUrl: 'images/icon_6.png',
     iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
     });
 var myIcon7 = L.icon({
     
-    iconUrl: 'images/icon7.png',
+    iconUrl: 'images/icon_7.png',
     iconSize:[30,30],
     iconAnchor:[0,0],
     popupAnchor:[15,10],
