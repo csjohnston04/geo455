@@ -106,26 +106,6 @@ mtn_peaks.features.forEach(function(feature) {
 
 mymap.addLayer(clustermarkers);
 
-var searchControl = new L.Control.Search({
-    position:'topright',
-    layer: peaks,
-    propertyName: 'TITLE',
-    marker: false,
-    markeranimate: true,
-    delayType: 50,
-    collapsed: false,
-    textPlaceholder: 'Search by Peak Name: e.g. Everest, Lhotse',   
-    moveToLocation: function(latlng, title, map) {
-        mymap.setView(latlng, 15);}
-});
-
-mymap.addControl(searchControl);
-L.control.scale({position: 'bottomright', maxWidth: '150', metric: 'True'}).addTo(mymap);
-var baseLayers = {
-    'Grayscale': grayscale,
-    
-    };
-
 var overlays = {
     'Heat':heat,
     'clustermarkers':clustermarkers,
@@ -151,4 +131,26 @@ var legend = L.control.layers(overlayMaps, {}, {collapsed: false}).addTo(mymap);
 L.easyButton(('<img src="globe_icon.png", height=85%>'), function(btn, map){
     map.setView([28.972443641658437, 84.59443216376953], 8);
 }).addTo(mymap);
+
+
+var searchControl = new L.Control.Search({
+    position:'topright',
+    layer: peaks,
+    propertyName: 'TITLE',
+    marker: false,
+    markeranimate: true,
+    delayType: 50,
+    collapsed: false,
+    textPlaceholder: 'Search by Peak Name: e.g. Everest, Lhotse',   
+    moveToLocation: function(latlng, title, map) {
+        mymap.setView(latlng, 15);}
+});
+
+mymap.addControl(searchControl);
+L.control.scale({position: 'bottomright', maxWidth: '150', metric: 'True'}).addTo(mymap);
+var baseLayers = {
+    'Grayscale': grayscale,
+    
+    };
+
 
