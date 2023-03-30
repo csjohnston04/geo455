@@ -28,7 +28,7 @@ var mymap = L.map("map", {
 
 
 var myIcon = L.icon({
-    iconUrl:'images/peaks.png',
+    iconUrl:'peaks.png',
     iconSize:[20, 20],
     iconAnchor:[10, 15],
     popupAnchor:[1, -24],
