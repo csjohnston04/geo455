@@ -77,4 +77,4 @@ wildfireRisk.bindPopup(function (error, featureCollection) {
   });
 var overlays = {'Cities': cities,
                'wildfireRisk': wildfireRisk };
-var layerControl = L.control.layers(grayscale, overlays, {collapsed: false}).addTo(mymap);
+var layerControl = L.control.layers({}, overlays, {collapsed: false}).addTo(mymap);
