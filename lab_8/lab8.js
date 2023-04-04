@@ -12,7 +12,10 @@ $(document).ready(function() {
         $("#splasher2").fadeOut();
     });
 });
-
+var mymap = L.map("map", {
+    center: [37, -95], 
+    zoom: 4,
+    });
 var grayscale = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ2NoYXVkaHVyaSIsImEiOiJjazBtcG5odG8wMDltM2JtcjdnYTgyanBnIn0.qwqjMomdrBMG36GQKXBlMw', {
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
@@ -20,16 +23,13 @@ var grayscale = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}
     id: 'mapbox/light-v9',
     tileSize: 512,
     zoomOffset: -1
-});
+}).addTo(mymap);
 
 
 
 //Create the map variable
 
-var mymap = L.map("map", {
-    center: [37, -95], 
-    zoom: 4,
-    layers: [grayscale,]});
+
 
 // Create menu items
 var baseLayers = {
