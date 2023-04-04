@@ -104,29 +104,32 @@
     
 
     </head>
-         <body bgcolor="#EDDD9E">
-       <h1 align="center">Lab 8</h1>
-              <div id= "container">
+         <body>
+       <div id= "container">
        <div id = "header">
-      <div id="map"></div>
-             <div id="leftmenu">
-             <button id="btn1" class="button">Show legend</button>
-             <button id="btn2" class="button">Hide legend</button>
-           <button id="btn3" class="button">Show about map</button>
-           <button id="btn4" class="button">Hide about map</button>
-             </div>
-     <div id= "splasher1" class="hidden">
-   <h2>Legend</h2>
-   <img src="legend.jpg" width="175" height="300" align='center'><img>
-</div>
-<div id= "splasher2" class="hidden">
-    <h3>About the map</h3>
-    <p>The data shows wildfire risk by USGS and location of populated cities. 
-    Click on the city markers to check their names. 
-    ESRI leaflet was used to display the datalayers.</p>
- </div>
-    
-    <script src="lab8.js"></script>
-    
-    </body>
+       <h1> Lab 8: Mapping with ESRI leaflet and jQuery</h1> 
+       </div>
+       
+           <div id="leftmenu">
+               <button id="btn1" class="button">Show Legend</button>
+               <button id="btn2" class="button">Hide Legend</button>
+               <button id="btn3" class="button">Show about map</button>
+               <button id="btn4" class="button">Hide about map</button>
+           </div>
+            <div id= "splasher1" class="hidden">
+                <h2>Legend</h2>
+                    <img src="img/legend.jpg" width="175" height="300" align='center'><img>
+            </div>
+            <div id= "splasher2" class="hidden">
+               <h3>About the map</h3>
+                <p>The data shows wildfire risk by USDA/USFS and location of populated cities by ESRI. Click on the Wildfire map to check the risk levels, and the city markers to check their names. ESRI leaflet was used to display the datalayers.</p>
+            </div>
+        <div id="map"></div>
+            <script src="map_lab8.js"></script>
+       </div>
+
+            
+       
+
+   </body>
 </html>
