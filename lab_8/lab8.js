@@ -27,15 +27,11 @@ var grayscale = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}
 
 
 
-//Create the map variable
 
 
 
-// Create menu items
-var baseLayers = {
-    'Grayscale': grayscale
-    
-    };
+
+
 
 
 var myIcon = L.icon({
