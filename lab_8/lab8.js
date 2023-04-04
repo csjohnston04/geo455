@@ -71,6 +71,7 @@ wildfireRisk.bindPopup(function (error, featureCollection) {
       return 'Risk Level: ' + featureCollection.features[0].properties.CLASS_DESC;
     }
   });
-var overlays = {'Cities': cities,
-               'wildfireRisk': wildfireRisk };
+var overlays = {
+    'Widlfire':wildfireRisk,
+    "<img src='img/icon.png' height=20> Major Cities": cities};
 var layerControl = L.control.layers({}, overlays, {collapsed: false}).addTo(mymap);
