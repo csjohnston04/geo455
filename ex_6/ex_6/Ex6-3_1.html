@@ -1,0 +1,61 @@
+<html>
+   <head>
+      <title>Ex- 6-3: Effects</title>
+       <style>
+           .charac {
+               float: left;
+           }
+           img {
+              width: 200px; 
+               height: 200px; 
+           }
+      </style>
+    </head>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+
+      <script>
+          
+       $(document).ready(function() {
+              $("#tintin").click(function(){
+                  $(this).hide(100);
+              });
+          });
+          $(document).ready(function() {
+              $("#haddock").click(function(){
+                  $(this).hide(200);
+              });
+          });
+          $(document).ready(function() {
+              $("#prof").click(function(){
+                  $(this).hide(400);
+              });
+          });
+          $(document).ready(function() {
+              $("#tom").click(function(){
+                  $(this).hide(800);
+              });
+          });
+         $(document).ready(function() {
+              $("button").click(function(){
+                  $("img").show();
+              });
+          });
+
+      </script>
+
+	
+   <body>
+       <h1> Adventures of Tintin </h1>
+       <p> Main Characters </p>
+       <div class= "charac">
+           <img id="tintin" src="img/tintin-milou.jpg">
+           <img id="haddock" src="img/captain-haddock_v2.jpg">
+           <img id="prof" src="img/prof_calcu.jpg">
+           <img id="tom" src="img/Thomson_&_Thompson.png">
+       </div>
+      <button>Show</button>
+
+   </body>
+</html>

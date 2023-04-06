@@ -1,0 +1,52 @@
+<html>
+   <head>
+      <title>Ex- 6-2: CSS manipulation</title>
+       <style>
+           .charac {
+               float: left;
+           }
+           img {
+              width: 200px; 
+               height: 200px; 
+           }
+           .styleclass {
+               border: 15px solid cadetblue;
+               
+           }
+      </style>
+    </head>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+
+     <script>
+          $(document).ready(function() {
+              $("button1").click(function(){
+                  $("img").addClass("styleclass"); //change to toggleClass
+                  
+              });
+          });
+         $(document).ready(function() {
+              $("button2").click(function(){
+                  $("img").removeClass("styleclass"); //change to toggleClass
+                  
+              });
+          });
+
+      </script>
+
+	
+   <body>
+       <h1> Adventures of Tintin </h1>
+       <p> Main Characters </p>
+       <div class= "charac">
+           <img src="img/tintin-milou.jpg">
+           <img src="img/captain-haddock_v2.jpg">
+           <img src="img/prof_calcu.jpg">
+           <img src="img/Thomson_&_Thompson.png">
+       </div>
+       
+       <button1>Try addClass()</button1>
+      <button2>Try RemoveClass()</button2>
+   </body>
+</html>
