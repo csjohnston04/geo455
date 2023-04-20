@@ -29,7 +29,7 @@ var migrationLayer = new L.migrationLayer({
 migrationLayer.addTo(mymap);
 
 
-var cities = L.geoJson(loc, {
+var counties = L.geoJson(loc, {
      style: function (feature) {
         return { color: '#980043', weight: 0.5, opacity: 0.7};
     },
@@ -38,7 +38,7 @@ var cities = L.geoJson(loc, {
     }
 }).addTo(mymap);
     
-mymap.fitBounds(cities.getBounds());
+mymap.fitBounds(counties.getBounds());
 
 
 
